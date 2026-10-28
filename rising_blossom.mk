@@ -16,14 +16,12 @@ $(call inherit-product, device/xiaomi/blossom/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Build flags
-# Lunch banner maintainer variable
-RISING_MAINTAINER="Qbhi"
 
 # Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
 # Set RISING_MAINTAINER for version control 
 # (Optional if builder is setting properties via init_<device>.cpp)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Mt6765" \
+    RisingChipset="MediaTek Helio P35" \
     RisingMaintainer="Qbhi"
 
 RISING_MAINTAINER := Qbhi
