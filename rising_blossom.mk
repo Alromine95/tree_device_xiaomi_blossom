@@ -34,6 +34,10 @@ TARGET_ENABLE_BLUR := false
 # Whether to ship aperture camera, false by default
 PRODUCT_NO_CAMERA := false
 
+# VANILLA build with MICROG
+WITH_GMS := false
+WITH_MICROG := true
+
 # Malloc
 PRODUCT_DISABLE_SCUDO := true
 
