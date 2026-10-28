@@ -36,6 +36,8 @@ PRODUCT_NO_CAMERA := false
 WITH_GMS := false
 WITH_MICROG := true
 
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
 # Malloc
 PRODUCT_DISABLE_SCUDO := true
 
