@@ -43,7 +43,7 @@ PRODUCT_DISABLE_SCUDO := true
 
 scr_resolution := 720
 
-PRODUCT_NAME := rising_blossom
+PRODUCT_NAME := lineage_blossom
 PRODUCT_DEVICE := blossom
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
