@@ -545,5 +545,8 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayBlossom \
     WifiResOverlayBlossom
 
+# Overlay
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/blossom/blossom-vendor.mk)
