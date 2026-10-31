@@ -15,29 +15,6 @@ $(call inherit-product, device/xiaomi/blossom/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Build flags
-
-# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
-# Set RISING_MAINTAINER for version control 
-# (Optional if builder is setting properties via init_<device>.cpp)
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="MediaTek Helio P35" \
-    RisingMaintainer="Qbhi"
-
-RISING_MAINTAINER := Qbhi
-
-# Disable/enable blur support, false by default
-TARGET_ENABLE_BLUR := false
-
-# Whether to ship aperture camera, false by default
-PRODUCT_NO_CAMERA := false
-
-# VANILLA build with MICROG
-WITH_GMS := false
-WITH_MICROG := true
-
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-
 # Malloc
 PRODUCT_DISABLE_SCUDO := true
 
@@ -49,3 +26,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildFingerprint=google/blossom/blossom:17/CP2A.260105.004.E1/14587043:user/release-keys
