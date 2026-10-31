@@ -37,6 +37,8 @@ PRODUCT_ENFORCE_VINTF_MANIFEST := false
 # Disable kernel requirement enforcement for VINTF compatibility
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
+#MiuiCam
+$(call inherit-product, vendor/xiaomi/miuicamera/MiuiCamera.mk)
 
 # Override kernel version for VINTF compatibility
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -544,9 +546,6 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayBlossom \
     TelephonyOverlayBlossom \
     WifiResOverlayBlossom
-
-# Overlay
-$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/blossom/blossom-vendor.mk)
