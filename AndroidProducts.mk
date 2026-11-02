@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_blossom.mk
+    $(LOCAL_DIR)/yaap_blossom.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_blossom-user \
-    voltage_blossom-userdebug \
-    voltage_blossom-eng
+    yaap_blossom-user \
+    yaap_blossom-userdebug \
+    yaap_blossom-eng
