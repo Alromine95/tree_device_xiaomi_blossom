@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/xiaomi/blossom/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Malloc
 PRODUCT_DISABLE_SCUDO := true
