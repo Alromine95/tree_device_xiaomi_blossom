@@ -8,7 +8,7 @@ if [ -f "$maindir/TMP_PATCHES" ]; then
   exit 0
 fi
 
-cd "$patchesDir" || { echo "patchesDir doesnt exists" && exit 1 ; }
+cd "$patchesDir" || { echo "patchesDir doesnt exists yes we are fucked" && exit 1 ; }
 find . -type f -name \*.patch | rev | cut -d/ -f2- | rev | uniq | cut -d/ -f2- > "$maindir/TMP_PATCHES"
 cd "$maindir"
 while read -r pdir; do
